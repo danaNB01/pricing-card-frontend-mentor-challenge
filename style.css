@@ -1,0 +1,116 @@
+/* 
+  rem = 16
+  2 rem = 32
+  1.5 rem = 24
+  1 rem = 26
+  0.5 rem = 8
+   */
+
+html {
+    box-sizing: border-box;
+    font-family: Karla, sans-serif;
+    font-size: 16px;
+}
+
+/* any generated content would respect those rules */
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #FFD340;
+}
+
+main {
+    width: 50vw;
+    height: 65vh;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid black;
+    box-shadow: 5px 5px 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+span {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+}
+
+h1 {
+    color: #008CDB;
+    font-size: 2rem;
+    padding: 20px 0px;
+}
+
+button {
+    background-color: #FFBC24;
+    padding: 10px 30px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #d39d20;
+    transform: scale(1.05);
+}
+
+.info {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 8px 0px;
+}
+
+#upper-section {
+    padding-left: 10px;
+    overflow: hidden;
+    flex: 1;
+}
+
+#bottom-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    border-top: 2px solid black;
+}
+
+#subscription {
+    background-color: #086CB4;
+    flex: 1;
+    padding-top: 10px;
+    padding-left: 10px;
+    border-right: 1px solid black;
+}
+
+#us {
+    background-color: #008CDB;
+    flex: 1;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-left: 1px solid black;
+}
+
+#upper-section>p:first-of-type {
+    color: #FFBC24;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 10px 0px;
+}
